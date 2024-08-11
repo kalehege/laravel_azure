@@ -42,7 +42,7 @@ vi laravel.conf
 
     DocumentRoot /var/www/html/<your_project_name_here>/public
 
-    <Directory /var/www/html/<your_project_name_here>>
+    <Directory /var/www/html/<your_project_name_here>/public>
         AllowOverride All
         Order allow,deny
         Allow from all
