@@ -57,5 +57,12 @@ a2dissite 000-default.conf
 a2ensite laravel.conf
 ~~~
 ~~~
+sudo apt-get install php-mysql
+~~~
+~~~
+sudo systemctl restart apache2
+~~~
+
+~~~
 service apache2 restart
 ~~~
