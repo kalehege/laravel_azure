@@ -1,7 +1,7 @@
 ### To install apache
 ~~~
-apt update
-apt install apache2 -y
+sudo apt update
+sudo apt install apache2 -y
 ~~~
 
 ### To install php
@@ -10,7 +10,7 @@ sudo apt install -y php php-curl libapache2-mod-php php-mbstring php-xmlrpc php-
 ~~~
 ### To install composer
 ~~~
-curl -sS https://getcomposer.org/installer | php 
+sudo curl -sS https://getcomposer.org/installer | php 
 sudo mv composer.phar /usr/local/bin/composer 
 ~~~
 ~~~
@@ -19,14 +19,14 @@ cd /var/www/html
 
 ### To create project
 ~~~
-composer create-project laravel/laravel <your_project_name_here>
+sudo composer create-project laravel/laravel <your_project_name_here>
 ~~~
 ~~~
 cd <your_project_name_here>
 ~~~
 ~~~
-chown www-data:www-data * -R
-chown www-data:www-data .* -R
+sudo chown www-data:www-data * -R
+sudo chown www-data:www-data .* -R
 ~~~
 
 ### to create apache configuration file
@@ -34,7 +34,7 @@ chown www-data:www-data .* -R
 cd /etc/apache2/sites-available
 ~~~
 ~~~
-vi laravel.conf
+sudo vi laravel.conf
 ~~~
 ~~~
 <VirtualHost *:80>
@@ -53,8 +53,8 @@ vi laravel.conf
 </VirtualHost>
 ~~~
 ~~~
-a2dissite 000-default.conf
-a2ensite laravel.conf
+sudo a2dissite 000-default.conf
+sudo a2ensite laravel.conf
 ~~~
 ~~~
 sudo apt-get install php-mysql
@@ -64,5 +64,5 @@ sudo systemctl restart apache2
 ~~~
 
 ~~~
-service apache2 restart
+sudo service apache2 restart
 ~~~
