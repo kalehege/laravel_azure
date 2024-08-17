@@ -53,6 +53,9 @@ sudo vi laravel.conf
 </VirtualHost>
 ~~~
 ~~~
+sudo a2enmod rewrite
+~~~
+~~~
 sudo a2dissite 000-default.conf
 sudo a2ensite laravel.conf
 ~~~
