@@ -25,6 +25,9 @@ sudo composer create-project laravel/laravel <your_project_name_here>
 cd <your_project_name_here>
 ~~~
 ~~~
+mv media build/
+~~~
+~~~
 sudo chown www-data:www-data * -R
 sudo chown www-data:www-data .* -R
 ~~~
