@@ -30,6 +30,11 @@ mv media build/
 ~~~
 sudo chown www-data:www-data * -R
 sudo chown www-data:www-data .* -R
+
+
+sudo chown -R www-data:www-data /var/www/posApp
+sudo chmod -R 775 /var/www/posApp/storage
+
 ~~~
 
 ### to create apache configuration file
